@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@color/bgdark"
+    tools:context=".ui.SplashActivity">
+
+
+    <TextView
+        android:id="@+id/letter_f"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:text="F"/>
+
+    <TextView
+        android:id="@+id/letter_a"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:text="A"/>
+
+    <TextView
+        android:id="@+id/letter_l"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+        android:text="L"/>
+
+    <TextView
+        android:id="@+id/letter_e"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:text="E"/>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "7130775319",
+    "project_id": "fale-app",
+    "storage_bucket": "fale-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7130775319:android:de252f6f35987e3b0c4152",
+        "android_client_info": {
+          "package_name": "dev.brunoribeiro.fale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7130775319-vddjs5vk0g3742n1dh6t1o4q98talma3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlUAByWvJoBoTJ4Au9unk6wtdLwhlDyEc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7130775319-vddjs5vk0g3742n1dh6t1o4q98talma3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

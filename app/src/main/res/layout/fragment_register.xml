@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="@color/bgscreen"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.RegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastro"
+            android:textStyle="bold"
+            android:textSize="46sp"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="40dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/red"
+            app:hintTextColor="@color/red"
+            android:textColorHint="@color/red"
+            android:hint="Nome">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_register_name"
+                android:layout_width="match_parent"
+                android:background="@color/bgdark"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/white"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/yellow"
+            app:hintTextColor="@color/yellow"
+            android:textColorHint="@color/yellow"
+            android:hint="Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_register_email"
+                android:layout_width="match_parent"
+                android:background="@color/bgdark"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/white"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/green"
+            app:hintTextColor="@color/green"
+            android:textColorHint="@color/green"
+            app:endIconTint="@color/bgscreen"
+            app:endIconMode="password_toggle"
+            android:hint="Senha">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_register_password"
+                android:layout_width="match_parent"
+                android:background="@color/bgdark"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="@color/green"
+            app:hintTextColor="@color/green"
+            android:textColorHint="@color/green"
+            android:hint="Confirmar senha">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_register_password_confirm"
+                android:layout_width="match_parent"
+                android:background="@color/bgdark"
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:backgroundTint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Cadastrar"/>
+
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/btn_voltar_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Voltar"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

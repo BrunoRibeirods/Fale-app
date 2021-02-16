@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/bgdark"
+    android:layout_marginTop="1dp"
+    android:layout_height="100dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="70dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:layout_height="70dp"
+        app:cardCornerRadius="80dp">
+
+        <ImageView
+            android:id="@+id/img_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/person1"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome da Pessoa"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:id="@+id/date_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18:00"
+                android:layout_gravity="end"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        <TextView
+            android:id="@+id/text_contact"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Blá blá bla´blá"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
