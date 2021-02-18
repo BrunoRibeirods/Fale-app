@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".ui.contact.ContactConversationFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_conv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bgdark"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"/>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_conv_msgs_friend"
+                android:layout_width="match_parent"
+                tools:listitem="@layout/item_msgs"
+                android:layout_height="match_parent"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="15dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="bottom|start"
+                app:cardCornerRadius="16dp"
+                android:backgroundTint="@color/bgdark"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_conv_msg"
+                    android:layout_margin="5dp"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:hint="Insira uma mensagem"
+                    android:textColorHint="@color/white"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_conv_send"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_baseline_send_24"
+                app:tint="@color/white"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/bgdark"
+                app:borderWidth="0dp"
+                app:fabSize="normal"
+                android:layout_gravity="bottom|end"/>
+
+
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

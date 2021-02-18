@@ -12,12 +12,15 @@ import androidx.fragment.app.FragmentTransaction
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import dev.brunoribeiro.fale.R
 import dev.brunoribeiro.fale.adapters.ContactsAdapter
 import dev.brunoribeiro.fale.databinding.FragmentHomeBinding
 import dev.brunoribeiro.fale.entities.Contact
+import dev.brunoribeiro.fale.entities.Message
 import dev.brunoribeiro.fale.repository.ServicesRepository
 
 
@@ -74,6 +77,9 @@ class HomeFragment : Fragment() {
 
     fun readData(){
         val listContact = mutableListOf<Contact>()
+        listContact.add(Contact("Bruno", "null", listOf(Message("eitch", "15:30"))))
+        listContact.add(Contact("Bruno", "null", listOf(Message("eitch", "15:30"))))
+        viewModel.getAllContacts(listContact)
         reference.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 if (dataSnapshot.exists()) {
@@ -101,7 +107,7 @@ class HomeFragment : Fragment() {
     }
 
     fun addContact(){
-
+        findNavController().navigate(R.id.action_homeFragment_to_contactAddFragment)
     }
 
 }
