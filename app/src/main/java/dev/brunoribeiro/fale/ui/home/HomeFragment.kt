@@ -77,8 +77,8 @@ class HomeFragment : Fragment() {
 
     fun readData(){
         val listContact = mutableListOf<Contact>()
-        listContact.add(Contact("Bruno", "null", listOf(Message("eitch", "15:30"))))
-        listContact.add(Contact("Bruno", "null", listOf(Message("eitch", "15:30"))))
+        listContact.add(Contact("Bruno", "null", listOf(Message("Opa", "15:30"))))
+        listContact.add(Contact("Elon Musk", "null", listOf(Message("Mandei pra marte", "00:30"))))
         viewModel.getAllContacts(listContact)
         reference.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {

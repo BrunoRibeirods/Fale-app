@@ -5,9 +5,69 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
     android:layout_height="match_parent"
+    android:background="@color/bgscreen"
     tools:context=".ui.contact.ContactAddFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_add"
+            android:layout_width="match_parent"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            app:title="Adicionar Contato"
+            app:titleTextColor="@color/white"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="300dp"
+            app:cardCornerRadius="12dp"
+            android:backgroundTint="@color/bgdark">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/subtext"
+                    android:hint="Nome do Contato"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/subtext"
+                    android:hint="Email do Contato"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_add_contact"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:text="Adicionar"
+            android:layout_height="65dp"/>
+
+    </LinearLayout>
 
 
 

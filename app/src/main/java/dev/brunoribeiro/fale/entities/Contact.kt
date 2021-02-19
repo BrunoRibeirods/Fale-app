@@ -1,7 +1,7 @@
 package dev.brunoribeiro.fale.entities
 
 data class Contact(
-        val name: String,
-        val img: String,
-        val messages: List<Message>
+        val name: String?= null,
+        val img: String?= null,
+        val messages: List<Message>? = null
 )

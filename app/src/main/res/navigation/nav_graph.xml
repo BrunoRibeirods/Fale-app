@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_homeFragment_to_contactAddFragment"
             app:destination="@id/contactAddFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_contactConversationFragment"
+            app:destination="@id/contactConversationFragment" />
     </fragment>
     <fragment
         android:id="@+id/contactAddFragment"
         android:name="dev.brunoribeiro.fale.ui.contact.ContactAddFragment"
         android:label="fragment_contact_add"
         tools:layout="@layout/fragment_contact_add" />
+    <fragment
+        android:id="@+id/contactConversationFragment"
+        android:name="dev.brunoribeiro.fale.ui.contact.ContactConversationFragment"
+        android:label="fragment_contact_conversation"
+        tools:layout="@layout/fragment_contact_conversation" />
 </navigation>

@@ -17,4 +17,5 @@
     <color name="bgdark">#141414</color>
 
     <color name="bgscreen">#1f1f1f</color>
+    <color name="subtext">#d1d1d1</color>
 </resources>
